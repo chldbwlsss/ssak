@@ -60,3 +60,6 @@ gradle-app.setting
 ### Gradle Patch ###
 # Java heap dump
 *.hprof
+
+### h2 Test DB ###
+/testdb.mv.db
