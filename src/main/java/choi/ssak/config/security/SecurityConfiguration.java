@@ -14,6 +14,7 @@ public class SecurityConfiguration {
         httpSecurity
                     .authorizeHttpRequests((authz) -> authz
                             .antMatchers("/h2/**").permitAll()
+                            .antMatchers("/**").permitAll()
                             .anyRequest().authenticated()
                     )
                     .csrf().disable()
